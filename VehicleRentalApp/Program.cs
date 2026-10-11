@@ -51,12 +51,11 @@ namespace VehicleRentalApp
             //    vehicles.Add(i, new Car(3, "Renault", "Captur", 2019, 20m, "Manual", 5, "Petrol", 100));
             //});
 
-            //users.Add(1, new Users(1, "Mark", "Summers", "Mark@Summers.com", "123Hello"));
-            //users.Add(2, new Users(2, "June", "Thomas", "June@Thomas.com", "123Hello"));
-            //users.Add(3, new Users(3, "Ann", "Marie", "Ann@Marie.com", "123Hello"));
-            //users.Add(4, new Users(4, "Dean", "Winchester", "Dean@Winchester.com", "123Hello"));
-            //users.Add(5, new Users(5, "Harry", "Miller", "Harry@Miller.com", "123Hello"));
-            //WriteBinary();
+            users.Add(6, new Users(1, "Mark", "Summers", "Mark@Summers.com", "123Hello"));
+            users.Add(2, new Users(2, "June", "Thomas", "June@Thomas.com", "123Hello"));
+            users.Add(3, new Users(3, "Ann", "Marie", "Ann@Marie.com", "123Hello"));
+            users.Add(4, new Users(4, "Dean", "Winchester", "Dean@Winchester.com", "123Hello"));
+            users.Add(5, new Users(5, "Harry", "Miller", "Harry@Miller.com", "123Hello"));
         }
 
         // Stores the user object after they have logged in for easy access to the data later on.
@@ -139,6 +138,11 @@ namespace VehicleRentalApp
                         }
                     }
                 }
+            } else
+            {
+                AddingData();
+                WritingAllVehicles();
+                SerialiseUsers();
             }
 
             // Handles command line arguments if passed in.
