@@ -11,14 +11,15 @@
 
 🫟 **Problem:** The objective of this assignment was to choose a real-world system and reduce it to a console-based application ensuring to implement all of the OOP (Object-Oriented-Programming) principles. Given the complexity of a vehicle rental website, turning it into a console app would cover all OOP areas plus more, and despite the difficult development proved to be a successful assignment project.
 
-🚪 **Approach:** Built with C# and .NET in Visual Studio. Implementing an _abstract_ base vehicle class with 3 sub-classes (Cars, Vans, Motorcycles), each with its own constructor to create a new vehicle object with its own properties on-top of the ones it _inherited_. Getters and setter methods are utilised for every property, base and inherited, for access to the objects due to the protected and private status of the class fields, _encapsulation_. _Polymorphic_ functions are implemented primarily for the reading and writing of vehicle data to the binary file,  
+🚪 **Approach:** Built with C# and .NET in Visual Studio. Implementing an _abstract_ base vehicle class with 3 sub-classes (Cars, Vans, Motorcycles), each with its own constructor to create a new vehicle object with its own properties on-top of the ones it _inherited_. _Polymorphic_ functions are implemented primarily for the reading and writing of the different vehicle data to the binary file via serialisation. The User data class is entirely encapsulated using getters and setters to access the object alongside a constructor to initialise it and then written to a JSON file for storage. Parallel programming implemented to make use of multiple processes, bettering the performance when there is large amounts of data to deal with.
 
 ### ✨ Features
 - Register an account and login, not required to view vehicles.
 - Navigate and view multiple pages of different types of vehicles (cars, vans, motorcycles).
 - Upload vehicle details to be put up for rent.
 - Rent & Return vehicles (Fake).
-- Access the system via the command line. 
+- Access the system via the command line.
+- Utilises multiple processes for data loading, best performance when dealing with large amounts of data.  
 
 ---
 🚦 **Status:** Working, though the application is very basic and should not be used for real-world purposes.
